@@ -3,15 +3,6 @@ resource "aws_instance" "prac_ec2" {
     instance_type          = "t3.micro"
     subnet_id              = aws_subnet.public_sub1.id
     associate_public_ip_address = true
-  /*
-  user_data              = <<-EOF
-                           #!/bin/bash
-                           sudo yum install -y httpd
-                           echo "Honglab WebServer" > /var/www/html/index.html
-                           sudo systemctl start httpd
-                           sudo systemctl enable httpd
-                           EOF
-  */
 
     tags = {
         Name = "webserver"

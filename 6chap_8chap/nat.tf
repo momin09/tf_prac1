@@ -1,4 +1,3 @@
-/*
 resource "aws_eip" "nat_ip" {
     vpc = true
 
@@ -10,4 +9,3 @@ resource "aws_eip" "nat_ip" {
         name = "prac_eip"
     }
 }
-*/

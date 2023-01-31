@@ -25,6 +25,7 @@ resource "aws_security_group" "my_server_securityG" {
         security_groups = ["sg-09cead68f8296475a"]
 
     }
+    Occur "Cycle error"
     */
 
     
